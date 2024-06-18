@@ -17,7 +17,7 @@ You can view my portfolio by visiting the following link:
 Feel free to reach out to me at:
 - Email: [syamalakumar1998@gmail.com](mailto:syamalakumar1998@gmail.com)
 - Phone: +91-7702249715
-- GitHub: [Your GitHub Profile](https://github.com/kumarsyamla)
+- GitHub: [Your GitHub Profile](https://github.com/kumarsyamala)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
