@@ -6,43 +6,65 @@
     <title>Syamala Kumar Rama Koti Reddy - Data Scientist Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f7f8fa;
             color: #333;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: linear-gradient(to right, #4b79a1, #283e51);
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77b300 3px solid;
-        }
-        header a, header h1 {
-            color: #fff;
-            text-decoration: none;
+            padding: 40px 0;
             text-align: center;
-            display: block;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        header a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #fff;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
         .main-content {
             padding: 20px;
             background: #fff;
-            margin-top: 20px;
+            margin-top: 80px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
         .section {
             margin-bottom: 20px;
         }
         .section h2 {
-            color: #77b300;
-            border-bottom: 2px solid #77b300;
+            color: #4b79a1;
+            border-bottom: 2px solid #4b79a1;
             padding-bottom: 10px;
             margin-bottom: 10px;
         }
@@ -58,7 +80,7 @@
             border-radius: 8px;
         }
         footer {
-            background: #333;
+            background: #283e51;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -71,6 +93,9 @@
 <body>
     <header>
         <div class="container">
+            <div class="profile-pic">
+                <img src="path_to_your_profile_picture.jpg" alt="Profile Picture">
+            </div>
             <h1>Syamala Kumar Rama Koti Reddy</h1>
             <p>Data Scientist | Azure ML | Databricks | Python | MLOps</p>
             <p>Email: <a href="mailto:syamalakumar1998@gmail.com">syamalakumar1998@gmail.com</a> | Phone: +91-7702249715 | GitHub: <a href="https://github.com/kumarsyamala" target="_blank">kumarsyamala</a></p>
@@ -85,31 +110,54 @@
             <section class="section work-experience">
                 <h2>Work Experience</h2>
                 <div class="job">
-                    <h3>Data Scientist • Kanini</h3>
-                    <p><strong>September 2021 - Present</strong></p>
+                    <h3>ML Engineer • Carelon</h3>
+                    <p><strong>September 2023 - Present</strong></p>
                     <ul>
-                        <li>Deployed machine learning models using Azure ML and Azure Functions for efficient and scalable deployment.</li>
-                        <li>Implemented computer vision tasks using state-of-the-art algorithms and techniques.</li>
-                        <li>Developed Python APIs and web applications using Flask and Django frameworks.</li>
-                        <li>Led a team of data scientists, providing guidance and mentoring.</li>
-                        <li>Utilized Azure ML for end-to-end machine learning workflows.</li>
-                        <li>Implemented CI/CD pipelines using bash and PowerShell scripts.</li>
-                        <li>Leveraged Azure Functions for triggering automated deployments.</li>
-                        <li>Created model endpoints using Azure ML for seamless production integration.</li>
-                        <li>Worked with Databricks for scalable data processing and analysis.</li>
-                        <li>Conducted code reviews and ensured adherence to best practices.</li>
+                        <li>Monitored and supported various data pipelines, ensuring smooth operation and timely resolution of any issues.</li>
+                        <li>Utilized AWS S3 to monitor logs and ensure data integrity and availability.</li>
+                        <li>Developed Splunk dashboards to analyze pipeline logs, enabling proactive identification of potential issues and performance bottlenecks.</li>
+                        <li>Leveraged Airflow Dag’s management, including triggering and monitoring, to ensure efficient and reliable data workflows.</li>
+                        <li>Utilized Datadog for in-depth analysis of pipeline logs, enabling proactive identification and resolution of anomalies.</li>
+                        <li>Managed Hadoop node utilization using Mobaxterm, ensuring optimal resource allocation and performance.</li>
+                        <li>Utilized Postman for API testing and logging analysis, ensuring the reliability and efficiency of API calls.</li>
+                        <li>Implemented monitoring and optimization of pipelines using Kubeflow, ensuring scalability and performance.</li>
+                        <li>Proficient in Linux commands for managing Hadoop nodes, ensuring system stability and performance.</li>
+                        <li>Provided user support and access management for Airflow, ensuring smooth collaboration and workflow execution.</li>
+                        <li>Utilized Hue for accessing and viewing tables, facilitating seamless reference and analysis within the data ecosystem.</li>
+                    </ul>
+                </div>
+                <div class="job">
+                    <h3>ML Engineer • Kanini</h3>
+                    <p><strong>September 2021 - September 2023</strong></p>
+                    <ul>
+                        <li>Responsible for model deployment using Azure ML and Azure Functions, ensuring efficient and scalable deployment of machine learning models.</li>
+                        <li>Implemented computer vision tasks using state-of-the-art algorithms and techniques to extract valuable insights from visual data.</li>
+                        <li>Developed Python APIs and web applications using Flask and Django frameworks to expose and interact with machine learning models.</li>
+                        <li>Utilized Azure ML for end-to-end machine learning workflows, including data preprocessing, model training, and evaluation.</li>
+                        <li>Implemented continuous integration and continuous deployment (CI/CD) pipelines using bash and PowerShell scripts, ensuring streamlined model deployment and monitoring.</li>
+                        <li>Leveraged Azure Functions for triggering automated deployments and executing tasks within the CI/CD pipelines.</li>
+                        <li>Implemented MLOps practices, including model versioning, model registry, and model performance tracking.</li>
+                        <li>Created model endpoints using Azure ML, allowing seamless integration of models into production systems.</li>
+                        <li>Worked with Databricks for scalable data processing and analysis, leveraging its powerful features for efficient data manipulation and model training.</li>
+                        <li>Maintained code in Azure DevOps, writing YAML scripts or using Classic Editor, and creating CD/CI pipelines.</li>
+                        <li>Created an Azure Databricks Workspace, maintaining the cluster, installing libraries, and scheduling notebook jobs with Python scripts.</li>
+                        <li>Created Azure Function apps with Service Bus Queue & Topic Trigger, deploying through Azure pipelines.</li>
+                        <li>Handled data in a storage account by connecting the storage container to Databricks, reading/writing data into the container.</li>
+                        <li>Deployed models in Azure ML using CD/CI pipelines.</li>
                     </ul>
                 </div>
                 <div class="job">
                     <h3>Retail Brand Manager • Lladro</h3>
                     <p><strong>November 2019 - January 2021</strong></p>
                     <ul>
-                        <li>Managed the retail brand for Lladro, specializing in porcelain art and collectibles.</li>
-                        <li>Developed and executed customer relationship management strategies.</li>
-                        <li>Generated sales through effective product presentations.</li>
-                        <li>Led marketing initiatives and conducted market research.</li>
-                        <li>Oversaw product stocking and inventory management.</li>
-                        <li>Managed a team of sales associates and built relationships with key stakeholders.</li>
+                        <li>Managed the retail brand for Lladro, a luxury brand specializing in porcelain art and collectibles.</li>
+                        <li>Developed and executed customer relationship management strategies, providing personalized service to high-end clientele.</li>
+                        <li>Generated sales through effective product presentations, highlighting unique features and benefits.</li>
+                        <li>Led marketing initiatives, including targeted campaigns and events, to enhance brand visibility and drive sales growth.</li>
+                        <li>Conducted market research and competitor analysis to identify trends, pricing strategies, and market opportunities.</li>
+                        <li>Oversaw product stocking and inventory management, ensuring availability and optimizing sales performance.</li>
+                        <li>Managed a team of sales associates, providing training, guidance, and performance evaluations.</li>
+                        <li>Built and maintained relationships with key stakeholders, including suppliers and retail partners.</li>
                     </ul>
                 </div>
             </section>
@@ -121,9 +169,16 @@
                     <p><strong>Jan 2021 - Aug 2021</strong></p>
                 </div>
                 <div>
+                    <h3>Luxury
+
                     <h3>Luxury Connect Business School</h3>
                     <p>Post Graduate Diploma in Luxury Management</p>
                     <p><strong>Apr 2018 - Jan 2020</strong></p>
+                </div>
+                <div>
+                    <h3>K L University</h3>
+                    <p>Bachelor of Business Administration (B.B.A.)</p>
+                    <p><strong>2015 - 2018</strong></p>
                 </div>
             </section>
             <section class="section skills">
@@ -132,8 +187,9 @@
                     <div><strong>Programming Languages:</strong> Python</div>
                     <div><strong>Data Engineering & ML Tools:</strong> Azure DevOps, MLOps, Databricks, TensorFlow (Keras), NLP, Supervised Learning Algorithms, Deep Learning</div>
                     <div><strong>Frameworks & Libraries:</strong> Flask, Django, Pandas, NumPy, Matplotlib, OpenCV</div>
-                    <div><strong>Cloud & Deployment:</strong> Azure-ml, CI/CD Deployment</div>
-                    <div><strong>Languages:</strong> English (Fluent), Hindi (Fluent)</div>
+                    <div><strong>Cloud & Deployment:</strong> Azure ML, CI/CD Deployment</div>
+                    <div><strong>Languages:</strong> English (Fluent), Hindi (Fluent), Telugu (Fluent)</div>
+                    <div><strong>Additional Skills:</strong> Airflow, SQL, Computer Vision, Tableau, OOPs, Linux Commands</div>
                 </div>
             </section>
             <section class="section certifications">
@@ -153,10 +209,31 @@
                     <div>
                         <h3>ML 360 (Machine Learning Platform)</h3>
                         <p>Developed an end-to-end machine learning platform for automated ML workflows and tasks, including EDA, feature engineering, model building, and live prediction.</p>
+                        <ul>
+                            <li>Implemented automated EDA techniques to gain insights into the data and identify patterns.</li>
+                            <li>Conducted data cleaning and pre-processing tasks to ensure data quality and compatibility with machine learning models.</li>
+                            <li>Performed feature engineering and feature selection to extract meaningful information and enhance model performance.</li>
+                            <li>Built machine learning models for various tasks such as classification, regression, and NLP.</li>
+                            <li>Integrated explainability techniques to interpret and understand model predictions.</li>
+                            <li>Developed a live prediction module for real-time inference and decision-making.</li>
+                            <li>Worked on building an automated ML platform with user-friendly interfaces and workflows.</li>
+                            <li>Collaborated with cross-functional teams to ensure seamless integration and deployment of ML models.</li>
+                            <li>Explored and implemented advanced NLP techniques for text processing and sentiment analysis.</li>
+                        </ul>
                     </div>
                     <div>
                         <h3>Computer Vision-Based Document Processing System</h3>
                         <p>Developed a comprehensive document processing system with face recognition, QR code generation, and text extraction from images using YOLO and OpenCV models.</p>
+                        <ul>
+                            <li>Implemented face recognition using state-of-the-art deep learning models, enhancing document security and enabling personalized document access.</li>
+                            <li>Utilized YOLO and OpenCV models for object detection and image processing tasks, such as detecting specific fields on cheques and extracting tables from PDF files.</li>
+                            <li>Developed a QR code generation system to streamline document uploads and enable efficient scanning and data extraction.</li>
+                            <li>Leveraged computer vision techniques to extract Vietnamese and Spanish text from images, facilitating multilingual document analysis and processing.</li>
+                            <li>Created algorithms for handwritten text extraction, automating digitization and analysis of handwritten documents.</li>
+                            <li>Performed image preprocessing tasks such as enhancement, resizing, and format conversion.</li>
+                            <li>Integrated the document processing system with Azure cloud services for scalable and efficient deployment.</li>
+                            <li>Implemented CI/CD pipelines for automated model deployment, ensuring seamless updates and improvements to the system.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
