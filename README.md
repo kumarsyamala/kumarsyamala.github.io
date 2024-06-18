@@ -7,7 +7,7 @@ I am a highly skilled and results-oriented Data Scientist with expertise in Azur
 
 ## View My Portfolio
 You can view my portfolio by visiting the following link:
-[https://kumarsyamala.github.io/portfolio/](https://kumarsyamala.github.io/)
+[https://kumarsyamala.github.io/](https://kumarsyamala.github.io/)
 
 ## Contents
 - **index.html**: The main HTML file containing the structure and content of my portfolio.
